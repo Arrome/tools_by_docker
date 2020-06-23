@@ -18,7 +18,7 @@ RUN git clone https://github.com/wg/wrk && cd wrk && make && \
 #net-tools(arp/route/ifconfig/netstat)
 #iproute
 RUN yum install -y hping3 tcpdump iperf3 traceroute && \
-    yum install -y iproute net-tools bridge-utils && \
+    yum install -y iproute net-tools bridge-utils ethtool && \
     yum install -y nmap-ncat
 
 #内存相关工具cachestat|cachetop|pcstat
