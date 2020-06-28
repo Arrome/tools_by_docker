@@ -19,7 +19,7 @@ RUN git clone https://github.com/wg/wrk && cd wrk && make && \
 #iproute
 RUN yum install -y hping3 tcpdump iperf3 traceroute && \
     yum install -y iproute net-tools bridge-utils ethtool && \
-    yum install -y nmap-ncat
+    yum install -y nmap-ncat bind-utils
 
 #内存相关工具cachestat|cachetop|pcstat
 #性能调优，多方面报告系统活动sysstat(sar/iostat/mpstat)
